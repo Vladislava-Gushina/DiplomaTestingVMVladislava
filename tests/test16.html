@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Проектирование цифровых устройств</title>
+    <link rel="shortcut icon" href="../assets/icon/free-icon-circuit-board-2752764.png" type="image/x-icon">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../projekt/assets/fonts/Roboto-Black.ttf">
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+
+    <div class="container-fluid">
+      <div class="row">
+       
+       <nav role="navigation" class="navbar navbar-inverse">
+          <div class="container">
+
+          <div class="navbar-header header">
+
+            <div class="container">
+              
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="../assets/img/logoS.png" alt="logo" class="logoS">
+                </div>
+                
+                <div class="col-lg-9">
+                  <h1><a href="#">Проектирование <span>цифровых устройств</span> </a></h1> 
+                </div>
+
+              </div>
+
+            </div>
+
+            
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+              
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+            </button>
+          
+
+          </div>
+            
+            <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+              
+              <ul class="nav nav-pills">
+                <li> <a href="../index.html">Главная</a> </li>
+                <li> <a href="../training.html">Организация обучения</a> </li>
+                <li> <a href="../material.html">Материал для изучения</a> </li>
+                <li class="active"> <a href="#">Тестировнаие</a> </li>
+                <li> <a href="../exam.html">Экзамен</a> </li>
+
+              </ul>
+
+
+            </div>
+
+          </div>
+       </nav> 
+
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      
+      <div class="container">
+        
+        <div class="row">
+          
+        <div class="col-lg-9 col-lg-push-3"> <!-- Меняем блоки местами col-lg-push-3 -->
+
+        	 <form role="search" class="visible-xs">
+          	 	<div class="form-group">
+          	 		<div class="input-group">
+          	 			<input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+
+          	 		<div class="input-group-btn">
+          	 			<button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+         	 		</div>
+          	 		</div>          	 		
+          	 	</div>
+          	 </form>
+          
+          <h2>Тест №16</h2>
+          <hr>
+          <div class="wrapper_test">
+            <script type="text/javascript" language="JavaScript">
+              var res="23142" 
+             function check_me()
+             {
+                 var count=0
+                 with(document.test)
+             {
+             if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked&&!Q1[4].checked)  
+             {count+=1};  
+             if (!Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked&&!Q2[3].checked&&!Q2[4].checked)  
+             {count+=1};  
+             if (!Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked&&!Q3[3].checked&&!Q3[4].checked)  
+             {count+=1};  
+             if (!Q4[0].checked&&!Q4[1].checked&&!Q4[2].checked&&!Q4[3].checked&&!Q4[4].checked)  
+             {count+=1};  
+             if (!Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked&&!Q5[3].checked&&!Q5[4].checked)  
+              
+              
+              
+             {count+=1};  
+             if (count>0) 
+                 {alert("Вы выполнили не все задания. Проверьте себя!")  } 
+                     else answer()
+                 }
+             } 
+              
+             function control(k, f1,f2,f3,f4,f5,f6) {
+             if (k==1&&f1.checked) return true;
+             if (k==2&&f2.checked) return true;
+             if (k==3&&f3.checked) return true;
+             if (k==4&&f4.checked) return true;
+             if (k==5&&f5.checked) return true;
+             
+             
+             return false;
+             }
+              
+             function answer()
+             {
+             answ="";
+                  with(document)
+                 {
+                 answ+=control(res.charAt(0) ,test.Q1[0],test.Q1[1],test.Q1[2],test.Q1[3])?"1":"0"
+             answ+=control(res.charAt(1) ,test.Q2[0],test.Q2[1],test.Q2[2],test.Q2[3])?"1":"0"
+             answ+=control(res.charAt(2) ,test.Q3[0],test.Q3[1],test.Q3[2],test.Q3[3])?"1":"0"
+             answ+=control(res.charAt(3) ,test.Q4[0],test.Q4[1],test.Q4[2],test.Q4[3])?"1":"0"
+             answ+=control(res.charAt(4) ,test.Q5[0],test.Q5[1],test.Q5[2])?"1":"0"
+             
+             
+            
+              
+             showResult();
+                 }
+             }
+              
+             function showResult()
+             {
+                 var nok=0;
+                 var i,s;
+              
+             for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+             if(nok==5) s="ОТЛИЧНО";
+             if(nok<5) s="ХОРОШО";
+             if(nok<4) s="УДОВЛЕТВОРИТЕЛЬНО";
+             if (nok<3) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+                 document.test.s1.
+                 value="Количество правильных ответов "+nok+". Ваша оценка  "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+              
+             with(document.test)
+                 {
+                 if (answ.charAt(0)=="1") {T1.value=" + "} else {T1.value=" - "};
+                if (answ.charAt(1)=="1") {T2.value=" + "} else {T2.value=" - "};
+                if (answ.charAt(2)=="1") {T3.value=" + "} else {T3.value=" - "};
+                if (answ.charAt(3)=="1") {T4.value=" + "} else {T4.value=" - "};
+                if (answ.charAt(4)=="1") {T5.value=" + "} else {T5.value=" - "};
+                
+                
+               
+                  }
+             }
+             function showhide(obj){
+                 if(obj == 'none') return 'inline';
+                 else return 'none';
+             }
+             </script>
+             
+             <div class="open">
+              <div class="instr" onclick="document.getElementById('instr').style.display = showhide(document.getElementById('instr').style.display)">Инструкция</div>
+             
+              <br/>
+              <div id="instr" >
+                <ul>
+                <li>1.Выберите один из вариантов в каждом из 5 вопросов;</li>
+                <li>2.Нажмите на кнопку "Показать результат";</li>
+                <li>3.Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+                <li>4.Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+                <li>5.За каждый правильный ответ начисляется 1 балл;</li>
+                <li>6.Оценки: менее 3 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 3 но менее 4 - УДОВЛЕТВОРИТЕЛЬНО, 4 и менее 5 - ХОРОШО, 5 - ОТЛИЧНО;</li>
+                <li>7.Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+                </ul>
+                </div>
+             </div>
+            <div class="work">
+              <div><form name="test"><ol>
+                <div class="question">
+                  <li>
+                    <INPUT type="text" size="1" name="T1"/><b>Первый этап изготовления печатной платы - это :</b><br/>
+                    <input type="radio" name="Q1"/><b>1. </b>металлизация отверстий.<br />
+                    <input type="radio" name="Q1"/><b>2. </b>сверление отверстий.<br />
+                    <input type="radio" name="Q1"/><b>3. </b>нанесение на стеклотексолит слоя фоторезиста. <br />
+                    <input type="radio" name="Q1"/><b>4. </b>нанесение паяльной маски.<br />
+                    <br/>
+                  </li>
+                </div>
+                <div class="question">
+                  <li><INPUT type="text" size="1" name="T2"/><b>Второй этап изготовления печатной платы - это :</b><br/>
+                    <input type="radio" name="Q2"/><b>1. </b>сверление отверстий.<br />
+                    <input type="radio" name="Q2"/><b>2. </b>нанесение паяльной маски. <br />
+                    <input type="radio" name="Q2"/><b>3. </b>метализация отверстий.<br />
+                    <input type="radio" name="Q2"/><b>4. </b>нанесение на стеклотексолит слоя фоторезиста. <br />
+                    
+                    <br/></li>
+                </div>
+                <div class="question"><li><INPUT type="text" size="1" name="T3"/><b>Третий этап изготовления печатной платы - это :</b><br/>
+                  <input type="radio" name="Q3"/><b>1. </b>нанесение на стеклотексолит слоя фоторезиста. <br />
+                  <input type="radio" name="Q3"/><b>2. </b>метализация отверстий. <br />
+                  <input type="radio" name="Q3"/><b>3. </b>нанесение паяльной маски. <br />
+                  <input type="radio" name="Q3"/><b>4. </b>сверление отверстий. <br />
+                  
+                  <br/></li></div>
+                <div class="question"><li><INPUT type="text" size="1" name="T4"/><b>Четверты этап изготовления печатной платы - это :</b><br/>
+                  <input type="radio" name="Q4"/><b>1. </b>нанесение на стеклотексолит слоя фоторезиста.<br />
+                  <input type="radio" name="Q4"/><b>2. </b>метализация отверстий.<br />
+                  <input type="radio" name="Q4"/><b>3. </b>сверление отверстий.я.<br />
+                  <input type="radio" name="Q4"/><b>4. </b>нанесение на стеклотексолит слоя фоторезиста.<br />
+                  
+                  <br/></li></div>
+                <div class="question"> <li><INPUT type="text" size="1" name="T5"/><b>Какой метод пайки используется в России?</b><br/>
+                  <input type="radio" name="Q5"/><b>1. </b>Лазерная.<br />
+                  <input type="radio" name="Q5"/><b>2. </b>Пайка двойной волной припоя.<br />
+                  <input type="radio" name="Q5"/><b>3. </b>Пайка в паровой фазе. <br />
+                  <input type="radio" name="Q5"/><b>4. </b>Пайка инфрокрасным нагревом.<br />
+                  
+                  
+                  <br/></li></div>
+               
+             
+          </ol>
+              <CENTER>
+
+              <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+              <INPUT onclick="check_me()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+              <INPUT type="reset" value="Сбросить ответы"/> 
+              </CENTER>        
+              </form>
+              </div>
+              </div>
+              </div>     
+       </div>
+      <div class="col-lg-3 col-lg-pull-9"> <!-- Меняем блоки местами col-lg-pull-9 -->
+         
+                         
+          <div class="panel panel-info">
+          	<div class="panel-heading"><div class="sidebar-header">Содержание</div></div>
+          	<div class="panel-body">
+
+          		<ul class="list-group">
+
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test1.html">Тест №1</a>
+          			</li>
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test2.html">Тест №2</a>
+          			</li>
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test3.html">Тест №3</a>
+          			</li>
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test4.html">Тест №4</a>
+          			</li>	
+
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test5.html">Тест №5</a>
+          			</li>
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test6.html">Тест №6</a>
+          			</li>
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test7.html">Тест №7</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test8.html">Тест №8</a>
+          			</li>
+          			<li class="list-group-item list-group-warning">
+          				
+          				<a href="test9.html">Тест №9</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test10.html">Тест №10</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test11.html">Тест №11</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test12.html">Тест №12</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test13.html">Тест №13</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test14.html">Тест №14</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test15.html">Тест №15</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test16.html">Тест №16</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test17.html">Тест №17</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test18.html">Тест №18</a>
+          			</li>
+                <li class="list-group-item list-group-warning">
+          				
+          				<a href="test19.html">Итоговое тестирование</a>
+          			</li>
+                
+               </ul>
+    </div>
+</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <footer>   
+      <div class="container">
+        <p class="text-center"> <a href="https://www.instagram.com/easy_ana/">Разработала Ванчурова Анастасия</a> </p>
+      </div>
+      <a href="#" title="Вернуться наверх" class="buttonup"><img src="../assets/icon/angle-double-up-solid.svg"></a>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
