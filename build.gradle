@@ -31,12 +31,17 @@ application {
 
 javafx {
     version = '21'
-    modules = ['javafx.controls', 'javafx.fxml']
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.web']
+
 }
 
 dependencies {
     implementation("org.jetbrains:annotations:24.0.0")
     implementation("org.jsoup:jsoup:1.17.2")
+    implementation("org.controlsfx:controlsfx:11.2.1")
+    implementation("com.dlsc.formsfx:formsfx-core:11.6.0")
+    implementation("net.synedra:validatorfx:0.5.1")
+    implementation("org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0")
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }

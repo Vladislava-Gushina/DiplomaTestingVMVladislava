@@ -4,6 +4,7 @@ module org.vladislava_g.diplomatestingvm {
     requires org.jsoup;
     requires org.jetbrains.annotations;
     requires java.desktop;
+    requires javafx.web;
 
 
     opens org.vladislava_g.diplomatestingvm to javafx.fxml;
